@@ -1,5 +1,20 @@
-<style>
+#index{
+	background-color: black;
+}
 
+.index {
+font-family: 'Condiment', cursive;
+color: white;
+text-align: center;
+padding-top: 30px;
+font-size: 50px;
 
+}
 
-</style>
+.start{
+	text-align: center;
+	color: black;
+	font-family: 'Condiment', cursive;
+	padding-top: 30px;
+	font-size: 50px;
+}
