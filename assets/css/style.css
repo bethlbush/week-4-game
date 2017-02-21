@@ -2,7 +2,7 @@
 	background-color: black;
 }
 
-.index {
+.index, h2{
 font-family: 'Condiment', cursive;
 color: white;
 text-align: center;
@@ -11,10 +11,72 @@ font-size: 50px;
 
 }
 
+h2{
+	font-size: 20px;
+}
+
 .start{
 	text-align: center;
 	color: black;
 	font-family: 'Condiment', cursive;
 	padding-top: 30px;
+	padding-bottom: 40px;
 	font-size: 50px;
+}
+
+#rainbow{
+	width: 40%;
+	padding-left: 50px;
+	float: left;
+	
+}
+
+.rules{
+	text-align: center;
+	color: black;
+	font-family: 'Julee' , cursive;
+	padding-bottom: 40px;
+	padding-right: 70px;
+	font-size: 20px;
+	width: 45%;
+	float: right;
+
+
+}
+
+
+.button-left{
+	width: 10%;
+	padding-left: 370px;
+
+}
+
+.button-right{
+	width: 10%;
+	padding-left: 100px;
+	
+}
+
+.guess{
+	font-size: 50px;
+	font-family: 'Condiment', cursive;
+	color: white;
+	text-align: center;
+	height: 50px;
+	padding-top: 20px;
+}
+
+.wins, .losses {
+	font-family: 'Condiment', cursive;
+	color: white;
+	padding-top: 20px;
+	font-size: 20px;
+	width: 10%;
+	float: left;
+	padding-top: 60px;
+ 
+}
+
+.wins {
+	padding-left: 450px;
 }
