@@ -106,5 +106,8 @@ if(total > magicNum){
 
 });
 
+//reset random numbers while keeping wins and losses.
+
+
 
 });//end of document ready function
