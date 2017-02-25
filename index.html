@@ -6,40 +6,46 @@
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Julee|Mirza|Condiment" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	
 </head>
 <body id= "index">
-	<div>
-		<h1 class="index">Gem Collector Game</h1>
+	
+		<h1 class="title">Gem Collector Game</h1>
 
-
-		<div id="game">
-			<H2>The Magic Number is:</H2>
+		<a href="start.html">Rules</a>
+	
+	<div id="game">
+			<h2>The Magic Number is: <span id="magicNum"></span></h2>
 			<br><br>
 
+		<div id="gems">
 			<div>
-			<img class="button-left" src="assets/images/gem_white.jpg">
-			<img class="button-right" src="assets/images/gem_rainbow.jpg">
+			<img class="gem" id="white" src="assets/images/gem_white.jpg">
+			<img class="gem" id="rainbow" src="assets/images/gem_rainbow.jpg">
 			</div>
 
-			<p class="guess">0<p>
+			<p class="total">0<p>
 
 			<div>
-			<img class="button-left" src="assets/images/gem_blue.jpg">
-			<img class="button-right" src="assets/images/gem_green.jpg">
+			<img class="gem" id="blue" src="assets/images/gem_blue.jpg">
+			<img class="gem" id="green" src="assets/images/gem_green.jpg">
 			</div>
-
-			<div>
-			<p class="wins">Wins:</p>
-			</div>
-
-			<div>
-			<p class="losses">Losses:</p>
-			</div>
-      			
-	
 		</div>
+
+		<div id="scores">
+
+			<p class="wins">Wins: <span id="wins"></span></p>
+			
+			<p class="losses">Losses: <span id="losses"></span></p>
+			
+		</div>
+
+		
+      			
 	</div>
+	
+
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 
