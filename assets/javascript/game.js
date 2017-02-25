@@ -9,10 +9,11 @@ var green;
 
 var wins = 0
 var losses = 0
+
 //document ready function for jquery
 $(document).ready(function(){
 
-//function to get random number	
+//function to generate random number	
 function randomNum(min,max){
 
     return Math.floor(Math.random()*(max-min+1)+min);
@@ -23,8 +24,6 @@ var magicNum = randomNum(19,120);
 //Show magicNum
 $("#magicNum").html(magicNum);
 
-//Invoke startGame function
-startGame();
 
 //randomNum function
 function randomNum(min,max){
@@ -37,16 +36,30 @@ var rainbow = randomNum(1,12);
 var blue = randomNum(1,12);
 var green = randomNum(1,12);
 
-//When user clicks on gem, 
-//total goes up by corresponding number.
-$(".gem").on('click', function(){
+/*test to make sure numbers being generated
 	console.log(white);
 	console.log(rainbow);
 	console.log(blue);
-	console.log(green);
-});
+	console.log(green);*/
 
-console.log(magicNum);
+//When user clicks on gem, 
+//total goes up by corresponding number.
+/*If user clicks on white gem, use white value,
+and so on.*/
+$("#white").on('click', function(){
+	console.log(white);
+});//end of gem click function
+$("#rainbow").on('click', function(){
+	console.log(rainbow);
+});//end of gem click function
+$("#blue").on('click', function(){
+	console.log(blue);
+});//end of gem click function
+$("#green").on('click', function(){
+	console.log(green);
+});//end of gem click function
+
+
 //If user total < magicNum
 //repeat process until user total >= magicNum
 //If user total = magicNum, wins++

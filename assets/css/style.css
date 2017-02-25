@@ -3,41 +3,40 @@
 }
 
 .title, h2{
-font-family: 'Condiment', cursive;
+font-family: 'Metamorphous', cursive;
 color: white;
 text-align: center;
-padding-top: 30px;
-font-size: 50px;
+padding-top: 15px;
+font-size: 40px;
 width: 100%;
-
+padding-bottom: 20px;
 
 }
 
 h2{
-	font-size: 20px;
+	font-size: 30px;
 }
 
 a{
-	font-family: 'Condiment', cursive;
-	color: white;
-	font-size: 20px;
+	font-family: 'Metamorphous', cursive;
+	color: dimgray;
+	font-size: 10px;
 	text-decoration: none;
 	margin: 0 auto;
 	width: 100%;
 	text-align: center;
 	display: block;
 	
-
 }
-
 
 .start{
 	text-align: center;
 	color: black;
-	font-family: 'Condiment', cursive;
+	font-family: 'Metamorphous', cursive;
 	padding-top: 30px;
 	padding-bottom: 40px;
-	font-size: 50px;
+	font-size: 40px;
+	display: block;
 }
 
 #bigRainbow{
@@ -50,20 +49,17 @@ a{
 .rules{
 	text-align: center;
 	color: black;
-	font-family: 'Julee' , cursive;
+	font-family: 'Metamorphous', cursive;
 	padding-bottom: 40px;
 	padding-right: 70px;
-	font-size: 20px;
+	font-size: 15px;
 	width: 45%;
 	float: right;
-
-
+	line-height: 1.5;
 }
-
 
 #white, #blue{
 	width: 15%;
-	padding-left: 10px;
 
 }
 
@@ -87,26 +83,26 @@ a{
 
 .total{
 	font-size: 50px;
-	font-family: 'Condiment', cursive;
+	font-family: 'Metamorphous', cursive;
 	color: white;
 	text-align: center;
 	height: 50px;
-	padding-top: 20px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 20px;
 }
 
 .wins, .losses {
-	font-family: 'Condiment', cursive;
+	font-family: 'Metamorphous', cursive;
 	color: white;
 	padding-right: 60px;
-	padding-left: 60px;
+	padding-left: 50px;
 	font-size: 20px;
 	width: 10%;
 	float: left;
-	padding-top: 60px;
+	padding-top: 45px;
  
 }
-
-
 
 @media screen and (min-width: 768px) {
 
