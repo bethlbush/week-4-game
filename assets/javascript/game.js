@@ -1,14 +1,15 @@
 //GLOBAL VARIABLES
 //------------------------------------------
-var total = 0
+var total = 5;
+var newTotal = "";
 var magicNum;
 var white;
 var rainbow;
 var blue;
 var green;
 
-var wins = 0
-var losses = 0
+var wins = 0;
+var losses = 0;
 
 //document ready function for jquery
 $(document).ready(function(){
@@ -46,10 +47,18 @@ var green = randomNum(1,12);
 //total goes up by corresponding number.
 /*If user clicks on white gem, use white value,
 and so on.*/
+
+
 $("#white").on('click', function(){
 	console.log(white);
+	
+	var newWhite = parseInt(white);
+	total += newWhite;
+	console.log(total);
+$(".total").html(total);
+
 });//end of gem click function
-$("#rainbow").on('click', function(){
+/*$("#rainbow").on('click', function(){
 	console.log(rainbow);
 });//end of gem click function
 $("#blue").on('click', function(){
@@ -59,10 +68,41 @@ $("#green").on('click', function(){
 	console.log(green);
 });//end of gem click function
 
+var newTotal = total +  
 
-//If user total < magicNum
-//repeat process until user total >= magicNum
-//If user total = magicNum, wins++
+$(document).on("click", ".gem", function() {
+
+	//If user total < magicNum
+    
+          if (newTotal < magicNum) {
+          	
+            // Grab the number of the value clicked and build a string with it
+            var newTotal = total + $(this).attr("value");
+            console.log(newTotal);
+            // Print it to the div
+            //$(".total").html(newTotal);
+          }
+
+          
+         /* else {
+          	//If user total = magicNum, wins++
+            // Grab the number of the value clicked and build a string with it
+            secondNumber += $(this).attr("value");
+
+            // Print the number to the firstPage
+            console.log(secondNumber);
+
+            // Print it to the div
+            $("#second-number").html(secondNumber);
+          };*/
+
+
+
+
+
+
+
+
 //If user total > magicNum, losses++
 
 
